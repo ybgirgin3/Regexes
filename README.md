@@ -38,7 +38,7 @@ bekxxx3@gmail.com, beskilo@doner.com,
 pythoncibeko@bekocanholding.com
 """
 
-ret = Regexes(data=string, dtype="emails").find_reg() // * Just add dtype arg
+ret = Regexes(data=string, dtype="emails").find_reg() # * Just add dtype arg
 print(ret)
 ```
 
