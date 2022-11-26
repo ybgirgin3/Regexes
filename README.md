@@ -1,15 +1,18 @@
 # Regexes
 
-Regex Finder for Python
-
 Easy regex finder for Python
+
+## installation
+```sh
+~$ pip install Regexes
+```
 
 Usage:
 
 - For extracting all possible info from string
 
 ```py
-from regexes import Regexes
+from Regexes import Regexes
 
 
 string = """
@@ -49,7 +52,7 @@ print(ret)
 - For specific type of info
 
 ```py
-from regexes import Regexes
+from Regexes import Regexes
 
 
 string = """
