@@ -87,4 +87,3 @@ class Regexes:
             ret[reg] = re.findall(regexes[reg], self.data)
         return ret
 
-
