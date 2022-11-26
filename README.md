@@ -22,6 +22,11 @@ pythoncibeko@bekocanholding.com
 
 ret = Regexes(data=string).find_reg()
 print(ret)
+
+# ---------------------------
+# {'emails': ['bekxxx3@gmail.com',
+#             'beskilo@doner.com',
+#             'pythoncibeko@bekocanholding.com']}
 ```
 
 - For specific type of info
@@ -40,6 +45,26 @@ pythoncibeko@bekocanholding.com
 
 ret = Regexes(data=string, dtype="emails").find_reg() # * Just add dtype arg
 print(ret)
+
+# ---------------------------
+# {'btc_addresses': [],
+#  'credit_cards': [],
+#  'dates': [],
+#  'emails': ['bekxxx3@gmail.com',
+#             'beskilo@doner.com',
+#             'pythoncibeko@bekocanholding.com'],
+#  'hex_colors': [],
+#  'ips': [],
+#  'ipv6s': [],
+#  'links': ['gmail.com', 'doner.com', 'bekocanholding.com'],
+#  'phones': ['05323450002', '05430000778'],
+#  'phones_with_exts': [],
+#  'po_boxes': [],
+#  'prices': [],
+#  'ssn_number': [],
+#  'street_addresses': [],
+#  'times': [],
+#  'zip_codes': []}
 ```
 
 Credit: [CommonRegex](https://github.com/madisonmay/CommonRegex)

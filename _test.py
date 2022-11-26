@@ -1,4 +1,5 @@
 from regexes import Regexes
+from pprint import pprint
 
 
 string = """
@@ -9,8 +10,8 @@ bekxxx3@gmail.com, beskilo@doner.com,
 pythoncibeko@bekocanholding.com
 """
 
-ret = Regexes(data=string, dtype="emails").find_reg()
-print(ret)
+ret = Regexes(data=string).find_reg()
+pprint(ret)
 
 # match = re.findall(r'[\w.+-]+@[\w-]+\.[\w.-]+', string)
 # regex = re.compile(r'[\w.+-]+@[\w-]+\.[\w.-]+')
