@@ -1,4 +1,4 @@
-from regexes import Regexes
+from Regexes import Regexes
 from pprint import pprint
 
 
