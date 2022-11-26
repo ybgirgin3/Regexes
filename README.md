@@ -23,28 +23,6 @@ pythoncibeko@bekocanholding.com
 ret = Regexes(data=string).find_reg()
 print(ret)
 
-# ---------------------------
-# {'emails': ['bekxxx3@gmail.com',
-#             'beskilo@doner.com',
-#             'pythoncibeko@bekocanholding.com']}
-```
-
-- For specific type of info
-
-```py
-from regexes import Regexes
-
-
-string = """
-Hello My name is Berkay and this is my project
-bekxxx3@gmail.com, beskilo@doner.com,
-05323450002,
-05430000778,
-pythoncibeko@bekocanholding.com
-"""
-
-ret = Regexes(data=string, dtype="emails").find_reg() # * Just add dtype arg
-print(ret)
 
 # ---------------------------
 # {'btc_addresses': [],
@@ -65,6 +43,32 @@ print(ret)
 #  'street_addresses': [],
 #  'times': [],
 #  'zip_codes': []}
+
+```
+
+- For specific type of info
+
+```py
+from regexes import Regexes
+
+
+string = """
+Hello My name is Berkay and this is my project
+bekxxx3@gmail.com, beskilo@doner.com,
+05323450002,
+05430000778,
+pythoncibeko@bekocanholding.com
+"""
+
+ret = Regexes(data=string, dtype="emails").find_reg() # * Just add dtype arg
+print(ret)
+
+
+# ---------------------------
+# {'emails': ['bekxxx3@gmail.com',
+#             'beskilo@doner.com',
+#             'pythoncibeko@bekocanholding.com']}
+
 ```
 
 Credit: [CommonRegex](https://github.com/madisonmay/CommonRegex)
