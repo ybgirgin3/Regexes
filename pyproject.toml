@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "Regexes"
-version = "0.0.2"
+version = "0.0.3"
 authors = [{ name = "Yusuf Berkay Girgin" }]
 description = "Common Regexes via Python"
 readme = "README.md"
