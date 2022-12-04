@@ -10,7 +10,7 @@ bekxxx3@gmail.com, beskilo@doner.com,
 pythoncibeko@bekocanholding.com
 """
 
-ret = Regexes(data=string).find_reg()
+ret = Regexes(data=string, dtype="phones").find_reg()
 pprint(ret)
 
 # match = re.findall(r'[\w.+-]+@[\w-]+\.[\w.-]+', string)
