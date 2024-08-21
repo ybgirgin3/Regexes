@@ -8,9 +8,14 @@ bekxxx3@gmail.com, beskilo@doner.com,
 05323450002,
 05430000778,
 pythoncibeko@bekocanholding.com
+127.0.0.1
 """
 
-ret = Regexes(data=string, dtype="emails").find_reg()
+ret = [
+    Regexes(data=string, dtype="email").find_reg(),
+    Regexes(data=string, dtype="phone").find_reg(),
+    Regexes(data=string, dtype="ip").find_reg()
+]
 pprint(ret)
 
 # match = re.findall(r'[\w.+-]+@[\w-]+\.[\w.-]+', string)
